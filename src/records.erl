@@ -15,3 +15,6 @@ first_bot() ->
         type = handmade,
         details = ["Moved by a small man inside"]
     }.
+
+car_factory(CorpName) ->
+    #robot{name = CorpName, hobbies = "building cars"}.
