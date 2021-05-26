@@ -5,10 +5,14 @@ on:
     branches: [ '*' ]
     paths:
     - '**.erl'
+    - '**.hrl'
+    - '**.app.src'
   pull_request:
     branches: [ '*' ]
     paths:
     - '**.erl'
+    - '**.hrl'
+    - '**.app.src'
 
 jobs:
 
