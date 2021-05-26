@@ -8,7 +8,7 @@ start() -> spawn(fun() -> dont_give_crap() end).
 
 dont_give_crap() ->
     receive
-        {Pid, Ref, Msg} -> Pid ! {Ref, meh};
+        {Pid, Ref, _Msg} -> Pid ! {Ref, meh};
         _ -> ok
     end,
     io:format("Switching to 'dont_give_crap' state~n"),
